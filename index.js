@@ -1,20 +1,21 @@
+require("dotenv").config();
 const fetch = require("node-fetch");
 const express = require("express");
 const app = express();
 
 crypto = {
   [process.env.t]: {
-    BTC: process.env.tBTC,
+    BTC: Number(process.env.tBTC),
   },
   [process.env.c]: {
-    BTC: process.env.cBTC,
-    ETH: process.env.cETH,
-    NANO: process.env.cNANO,
+    BTC: Number(process.env.cBTC),
+    ETH: Number(process.env.cETH),
+    NANO: Number(process.env.cNANO),
   },
   [process.env.e]: {
-    BTC: process.env.eBTC,
-    ETH: process.env.eETH,
-    NANO: process.env.eNANO,
+    BTC: Number(process.env.eBTC),
+    ETH: Number(process.env.eETH),
+    NANO: Number(process.env.eNANO),
   },
 };
 
