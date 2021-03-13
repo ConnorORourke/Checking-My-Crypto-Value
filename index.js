@@ -11,12 +11,16 @@ crypto = {
     BTC: Number(process.env.cBTC),
     ETH: Number(process.env.cETH),
     NANO: Number(process.env.cNANO),
+    ADA: Number(process.env.cADA),
   },
   [process.env.e]: {
     BTC: Number(process.env.eBTC),
     ETH: Number(process.env.eETH),
     NANO: Number(process.env.eNANO),
   },
+  [process.env.g]: {
+    BTC: Number(process.env.gBTC),
+  }
 };
 
 const getPrice = async (amountsObj) => {
