@@ -20,6 +20,9 @@ crypto = {
   },
   [process.env.g]: {
     BTC: Number(process.env.gBTC),
+  },
+  [process.env.s]: {
+    BTC: Number(process.env.sBTC),
   }
 };
 
